@@ -21,7 +21,11 @@ export function Control() {
     )
   }
   return <ul>
-    <li><Link href="/create">create</Link></li>
-    {contextUI}
+    
+  <li>
+    <Link href="/create">create</Link>
+  </li>
+{router.pathname !== "/create" && contextUI}
+
   </ul>;
 }

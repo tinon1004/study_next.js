@@ -25,10 +25,9 @@ export default function Create() {
         router.refresh();
 
     }}>
-      <h2>Create</h2>
+      <h2>맛집 리스트 추가</h2>
       <p><input type="text" name="title" placeholder="title"/></p>
       <p><textarea name="body" placeholder="body"></textarea></p>
-      <p><input type="submit" value="create" /></p>
     </form>
   )
 }

@@ -16,9 +16,9 @@ export default async function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <div>
+        <div className='maincontainer'>
           <input type="text" placeholder="search" />
-          <h1><Link href="/">WEB</Link></h1>
+          <h1><Link href="/">맛집 리스트</Link></h1>
           <ol>
             {topics.map((t)=>{
               return <li key={t.id}><Link href={`/read/${t.id}`}>{t.title}</Link></li>
